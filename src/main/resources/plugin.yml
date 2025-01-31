@@ -1,0 +1,32 @@
+name: GlowingItemPlugin
+version: 1.0
+main: org.kray.glowItem.GlowItem
+author: kray
+api-version: 1.21
+commands:
+  glowitem:
+    description: Создать светящийся предмет.
+    usage: /glowitem <наклон> <размер> <цвет>
+    permission: glowitem.use
+    permission-message: У вас нет прав для использования этой команды.
+  glowclear:
+    description: Очистить все ArmorStand в указанном радиусе.
+    usage: /glowclear <радиус>
+    permission: glowitem.clear
+    permission-message: У вас нет прав для использования этой команды.
+  destroyglow:
+    description: Уничтожить ArmorStand, на который вы смотрите.
+    usage: /destroyglow
+    permission: glowitem.destroy
+    permission-message: У вас нет прав для использования этой команды.
+
+permissions:
+  glowitem.use:
+    description: Позволяет использовать команду /glowitem.
+    default: true
+  glowitem.clear:
+    description: Позволяет использовать команду /glowclear.
+    default: op
+  glowitem.destroy:
+    description: Позволяет использовать команду /destroyglow.
+    default: true

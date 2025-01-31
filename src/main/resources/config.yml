@@ -1,0 +1,10 @@
+size:
+  min: 0.5
+  max: 4.0
+glow-colors:
+  - RED
+  - GREEN
+  - BLUE
+  - YELLOW
+  - PURPLE
+destroy-item: shears
